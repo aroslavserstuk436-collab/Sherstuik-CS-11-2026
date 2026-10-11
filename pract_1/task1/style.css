@@ -1,0 +1,132 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(18, 75px);
+    grid-auto-rows: 75px;
+    gap: 4px;
+}
+
+.container{
+    background-color: rgb(54, 12, 179);
+    color: white;
+    border-radius: 2.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-size: 10px;
+    text-align: center;
+}
+
+.symbol{
+    font-size: 30px;
+    text-align: center;
+}
+
+.number{
+    left: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.helium {
+    grid-column: 18;
+}
+
+.thirteenth {
+    grid-column: 13;
+}
+
+.star {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-top: 25px;
+    align-items: center;
+    line-height: 1;
+}
+
+.numbers {
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.yellow {
+    background-color: rgb(221, 142, 5);
+}
+
+.red {
+    background-color: rgb(214, 40, 40);
+}
+
+.star1 {
+background-color: rgb(244, 70, 99);
+}
+
+.star2 {
+background-color: rgb(204, 59, 7);
+}
+
+.green {
+    background-color: rgb(70, 143, 21);
+}
+
+.lightgreen {
+    background-color: rgb(130, 187, 24);
+}
+
+.gray {
+    background-color: rgb(92, 92, 92);
+}
+
+.lightblue {
+    background-color: rgb(45, 135, 237);
+}
+
+.darkblue {
+    background-color: rgb(36, 36, 245);
+}
+
+.cyan {
+    background: rgb(13, 149, 167);
+}
+
+.landa {
+    display: grid;
+    margin-top: 20px;
+    margin-left: 158px;
+    grid-template-columns: repeat(15, 75px);
+    grid-auto-rows: 75px;
+    gap: 4px;
+}
+
+.lantanoyidy {
+    color: white;
+    border-radius: 2.5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(244, 70, 99);
+}
+
+
+.aanda {
+    display: grid;
+    margin-top: 99px;
+    margin-left: 79px;
+    grid-template-columns: repeat(15, 75px);
+    grid-auto-rows: 75px;
+    gap: 4px;
+}
+
+.actinoidy {
+    color: white;
+    border-radius: 2.5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(204, 59, 7);
+}
