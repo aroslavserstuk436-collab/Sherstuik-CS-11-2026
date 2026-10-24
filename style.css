@@ -1,0 +1,693 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 735px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #4650dd;
+}
+
+.credit {
+  font-size: 11px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.center {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  width: 560px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #f7b100;
+  color: #4650dd;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 11px 25px;
+  border-radius: 30px;
+}
+
+/* 1. Головний блок */
+
+.hero {
+  background: #4650dd;
+  padding: 30px 0 50px;
+}
+
+.hero-box {
+  position: relative;
+  width: 735px;
+  max-width: 100%;
+  height: 660px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 550px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  position: absolute;
+  left: 217px;
+  top: 214px;
+  width: 520px;
+  padding: 30px 25px;
+  background: #4650dd;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.subjects {
+  position: absolute;
+  left: 217px;
+  top: 363px;
+  width: 518px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.subject {
+  height: 132px;
+  background: #fff;
+  color: #4650dd;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 5px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  background: #f7b100;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.hero .credit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  margin: 0;
+}
+
+/* 2. Партнери */
+
+.partners {
+  background: #4650dd;
+  padding: 45px 0 55px;
+}
+
+.partners h2 {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.partners .intro {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  width: 440px;
+}
+
+.cards {
+  display: flex;
+  gap: 14px;
+  margin-top: 45px;
+}
+
+.card {
+  flex: 1;
+  padding: 14px 14px 22px;
+  text-align: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 261 / 276;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  color: #222;
+  font-size: 17px;
+  margin: 14px 0 12px;
+}
+
+.card p {
+  font-size: 10px;
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.card a {
+  color: #222;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.partners .credit {
+  color: #fff;
+  margin-top: 35px;
+}
+
+/* 3. Цінності */
+
+.values {
+  background: #4650dd;
+  padding: 70px 0 60px;
+}
+
+.values h2 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.values .intro {
+  color: #fff;
+}
+
+.yellow-line {
+  position: relative;
+  margin-top: 45px;
+}
+
+.yellow-line::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  top: 16.5%;
+  bottom: 16.5%;
+  background: #f7b100;
+}
+
+.boxes {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  min-height: 185px;
+  background: #fff;
+  padding: 18px 16px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.box h4 {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.box p {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #999;
+  margin-top: 10px;
+}
+
+.box span {
+  margin-top: auto;
+  text-align: right;
+  color: #4650dd;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* 4. Цифри */
+
+.numbers {
+  background: #4650dd;
+  padding: 60px 15px 80px;
+  color: #fff;
+}
+
+.numbers-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nums {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px 50px;
+  text-align: center;
+}
+
+.nums b {
+  font-size: 40px;
+}
+
+.nums p {
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 12px;
+  white-space: nowrap;
+}
+
+.nums-text h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.nums-text p {
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+/* 5. Місія */
+
+.mission {
+  background: linear-gradient(#4650dd 56%, #fff 56%);
+  padding: 40px 0 60px;
+}
+
+.mission-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.mission-card {
+  width: 360px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  margin-right: -185px;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-card h2 {
+  color: #222;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.mission-card .credit {
+  text-align: left;
+  margin: 12px 0 22px;
+}
+
+.mission-photo {
+  width: 560px;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* 6. Відгуки */
+
+.reviews {
+  background: #fff;
+  padding: 60px 15px 55px;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: 1fr 130px 1fr;
+  align-items: center;
+  gap: 30px;
+  width: 735px;
+  max-width: 100%;
+  margin: 0 auto 22px;
+}
+
+.review .face {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f7b100;
+}
+
+.review .text {
+  text-align: right;
+}
+
+.review.right .text {
+  text-align: left;
+}
+
+.review h4 {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.review p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.review p a {
+  color: #4650dd;
+}
+
+.review .bird {
+  width: 34px;
+}
+
+.review.right .bird {
+  justify-self: end;
+}
+
+/* 7. Цитата */
+
+.quote {
+  background: #4650dd;
+  padding: 40px 0 35px;
+  text-align: center;
+}
+
+.quote-mark {
+  color: #f7b100;
+  font: bold 100px/80px Arial, sans-serif;
+  height: 50px;
+}
+
+.quote img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px auto -85px;
+}
+
+.quote-box {
+  background: #fff;
+  width: 640px;
+  max-width: 100%;
+  margin: 0 auto 28px;
+  padding: 115px 40px 40px;
+  border-radius: 10px;
+  color: #4650dd;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.author {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.quote .credit {
+  color: #fff;
+}
+
+/* 8. Контакти */
+
+.contact {
+  background: #fff;
+  padding: 50px 0 40px;
+}
+
+.contact-top {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.contact-top img {
+  width: 404px;
+  height: 404px;
+  object-fit: cover;
+}
+
+form {
+  flex: 1;
+}
+
+form h2 {
+  color: #111;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+form label {
+  display: block;
+  font-size: 10px;
+  margin-top: 12px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 10px;
+  font-family: inherit;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.terms {
+  font-size: 10px;
+  margin: 14px 0;
+}
+
+.terms a {
+  color: #4650dd;
+}
+
+form button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 30px;
+  background: #4650dd;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.info {
+  display: flex;
+  gap: 14px;
+  margin-top: 35px;
+}
+
+.info-box {
+  flex: 1;
+  background: #4650dd;
+  color: #fff;
+  padding: 22px 20px;
+  border-radius: 10px;
+}
+
+.info-box h4 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.info-box h4 img {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+.info-box p {
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+/* Футер */
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 45px 15px;
+  font-size: 9px;
+  line-height: 1.8;
+}
+
+footer .made {
+  margin-top: 35px;
+}
+
+/* Для телефонів */
+
+@media (max-width: 800px) {
+  .hero-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .hero-photo,
+  .hero h1,
+  .subjects,
+  .hero .credit {
+    position: static;
+  }
+
+  .hero-photo {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero h1 {
+    width: auto;
+    font-size: 30px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .subjects {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero .credit {
+    margin-top: 15px;
+  }
+
+  .cards,
+  .info,
+  .contact-top,
+  .numbers-box,
+  .mission-box {
+    flex-direction: column;
+  }
+
+  .mission-card {
+    width: 100%;
+    margin: 0 0 -40px;
+  }
+
+  .mission-photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contact-top img {
+    width: 100%;
+    height: auto;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .yellow-line::before {
+    display: none;
+  }
+
+  .review {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .review .face {
+    order: -1;
+    width: 90px;
+    height: 90px;
+  }
+
+  .review .bird {
+    display: none;
+  }
+
+  .review .text,
+  .review.right .text {
+    text-align: left;
+  }
+}
